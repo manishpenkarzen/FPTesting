@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Analytics" thread-count="1" parallel="none">
+    <classes>
+       <class name="com.freshproposals.selenium.TextBox_Top_Properties2"/>
+       <class name="com.freshproposals.selenium.Template_TextBox_2"/>
+       <class name="com.freshproposals.selenium.TextBox_Top_Properties_Template"/>
+       <class name="com.freshproposals.selenium.TextBox_Top_Properties"/>
+       <class name="com.freshproposals.selenium.Page_Up_Properties"/>
+       <class name="com.freshproposals.selenium.ResizeTextBox"/>
+       <class name="com.freshproposals.selenium.Existing_Template"/>
+       <class name="com.freshproposals.selenium.Existing_Single_Image_Proposal"/>
+       <class name="com.freshproposals.selenium.Image_Section"/>
+       <class name="com.freshproposals.selenium.Image_Template"/>
+       <class name="com.freshproposals.selenium.RectangleandLinePropertiesInProposal"/>
+       <class name="com.freshproposals.selenium.RectangleandLinepropertiesInSection"/>
+       <class name="com.freshproposals.selenium.RectangleandLinePropertiesInTemplate"/>
+       <class name="com.freshproposals.selenium.Signature_Proposal"/>
+       <class name="com.freshproposals.selenium.Signature_Section"/>
+       <class name="com.freshproposals.selenium.Signature_Template"/>
+       <class name="com.freshproposals.selenium.FontPropertiesInProposal"/>
+       <class name="com.freshproposals.selenium.FontPropertiesInSection"/>
+       <class name="com.freshproposals.selenium.FontPropertiesinTemplate"/>
+       <class name="com.freshproposals.selenium.RectangleandLineRepositioninProposal"/>
+       <class name="com.freshproposals.selenium.RectangleAndLineRepositionTemplate"/>
+       <class name="com.freshproposals.selenium.RectangleRepositionInSection"/>
+       <class name="com.freshproposals.selenium.CheckPositionOfTheTextcomponent"/>
+       <class name="com.freshproposals.selenium.ResizingOfAllComponent"/>
+       <!--  <class name="com.freshproposals.selenium.ShapeLineProperties"/>
+       <class name="com.freshproposals.selenium.ShapeRectangleProperties"/> -->
+       
+       <class name="com.freshproposals.selenium.Send_Proposal_Temp"/>
+       <class name="com.freshproposals.selenium.Gmail_Testing"/>
+       <class name="com.freshproposals.selenium.ClientContact"/>
+       <class name="com.freshproposals.selenium.Email_Template"/>
+       <class name="com.freshproposals.selenium.Lost_Proposal_Verification"/>
+       <class name="com.freshproposals.selenium.Push_Proposal"/>
+       <class name="com.freshproposals.selenium.Push_Template"/>
+       <class name="com.freshproposals.selenium.Section_List_Proposal"/>
+       <class name="com.freshproposals.selenium.Section_List_Template"/>
+       <class name="com.freshproposals.selenium.Select_Search_Tab"/>
+       <class name="com.freshproposals.selenium.Won_Proposal_Verification"/>
+       <class name="com.freshproposals.selenium.Analytics_Template_Scratch"/>
+       
+        <class name="com.freshproposals.selenium.FeeTable"/>
+       <class name="com.freshproposals.selenium.FeeTableInProposal"/>
+       <class name="com.freshproposals.selenium.F2B2_Multiple"/>
+       <class name="com.freshproposals.selenium.F2B2"/>
+       <class name="com.freshproposals.selenium.Collapse_Controls"/>
+       <class name="com.freshproposals.selenium.AddVariablesandVerify"/>
+       <class name="com.freshproposals.selenium.ExistingVariable"/>
+       <class name="com.freshproposals.selenium.UpdatedVariables"/>
+       <class name="com.freshproposals.selenium.TempRead"/>
+       <class name="com.freshproposals.selenium.Analytics_Template_Scratch"/>
+       <class name="com.freshproposals.selenium.Analytics_Feestable_Proposal"/>
+       <class name="com.freshproposals.selenium.Analytics_Proposal"/>
+       <class name="com.freshproposals.selenium.Analytics_Tabchange_Proposal"/>
+       <class name="com.freshproposals.selenium.UseThis_Checkversions"/>
+       <class name="com.freshproposals.selenium.Verify_Color"/>
+       <class name="com.freshproposals.selenium.Verify_Position_with_Preview"/>
+       <class name="com.freshproposals.selenium.X_Y_Position"/>
+      <!--  <class name="com.freshproposals.selenium.ZoomLevelTesting"/>-->
+       
+       <class name="com.freshproposals.selenium.Image_DragDrop_Position_Proposal"/>
+       <class name="com.freshproposals.selenium.Image_DragDrop_Position_Section"/>
+       <class name="com.freshproposals.selenium.Image_DragDrop_Position_Template"/>
+       <class name="com.freshproposals.selenium.Signature_DragDrop_Position_Proposal"/>
+       <class name="com.freshproposals.selenium.Signature_DragDrop_Position_Section"/>
+       <class name="com.freshproposals.selenium.Signature_DragDrop_Position_Template"/>
+       <class name="com.freshproposals.selenium.Signature_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Signature_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Signature_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.Rectangle_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Rectangle_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Rectangle_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.TextBox_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.TextBox_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.TextBox_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.Ellipse_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Ellipse_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Ellipse_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.Image_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Image_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Image_Duplicate_Template"/>
+      
+   </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+

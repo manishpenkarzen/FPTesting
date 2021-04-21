@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="SectionProperties" thread-count="2" parallel="none">
+    <classes>
+      
+        <class name="com.freshproposals.selenium.FeeTable"/>
+         <class name="com.freshproposals.selenium.FeeTableInProposal"/>
+         <class name="com.freshproposals.selenium.ResizeTextBox"/>
+          <class name="com.freshproposals.selenium.ResizingOfAllComponent"/>
+          <class name="com.freshproposals.selenium.RectangleandLineRepositioninProposal"/>
+          <class name="com.freshproposals.selenium.RectangleAndLineRepositionTemplate"/>
+          <class name="com.freshproposals.selenium.RectangleRepositionInSection"/>
+          <class name="com.freshproposals.selenium.RectangleandLinePropertiesInProposal"/>
+          <class name="com.freshproposals.selenium.RectangleandLinepropertiesInSection"/>
+       		 <class name="com.freshproposals.selenium.RectangleandLinePropertiesInTemplate"/>
+        	<class name="com.freshproposals.selenium.TempRead"/>
+       		 <class name="com.freshproposals.selenium.FontPropertiesInProposal"/>
+        <class name="com.freshproposals.selenium.FontPropertiesInSection"/>
+        <class name="com.freshproposals.selenium.FontPropertiesinTemplate"/>
+         <class name="com.freshproposals.selenium.ExistingVariable"/>
+          <class name="com.freshproposals.selenium.ZoomLevelTestingInSectionPreview"/>
+                  <class name="com.freshproposals.selenium.UpdatedVariables"/>
+        
+       
+        
+        
+        
+        
+        
+       
+       
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+

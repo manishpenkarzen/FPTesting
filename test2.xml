@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Analytics" thread-count="1" parallel="none">
+    <classes>
+       <class name="com.freshproposals.selenium.FeeTable"/>
+       <class name="com.freshproposals.selenium.FeeTableInProposal"/>
+       <class name="com.freshproposals.selenium.F2B2_Multiple"/>
+       <class name="com.freshproposals.selenium.F2B2"/>
+       <class name="com.freshproposals.selenium.Collapse_Controls"/>
+       <class name="com.freshproposals.selenium.AddVariablesandVerify"/>
+       <class name="com.freshproposals.selenium.ExistingVariable"/>
+       <class name="com.freshproposals.selenium.UpdatedVariables"/>
+       <class name="com.freshproposals.selenium.TempRead"/>
+       <class name="com.freshproposals.selenium.Analytics_Template_Scratch"/>
+       <class name="com.freshproposals.selenium.Analytics_Feestable_Proposal"/>
+       <class name="com.freshproposals.selenium.Analytics_Proposal"/>
+       <class name="com.freshproposals.selenium.Analytics_Tabchange_Proposal"/>
+       <class name="com.freshproposals.selenium.UseThis_Checkversions"/>
+       <class name="com.freshproposals.selenium.Verify_Color"/>
+       <class name="com.freshproposals.selenium.Verify_Position_with_Preview"/>
+       <class name="com.freshproposals.selenium.X_Y_Position"/>
+       <class name="com.freshproposals.selenium.ZoomLevelTesting"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+

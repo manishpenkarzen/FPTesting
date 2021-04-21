@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Analytics" thread-count="1" parallel="none">
+    <classes>
+        <class name="com.freshproposals.selenium.Image_DragDrop_Position_Proposal"/>
+       <class name="com.freshproposals.selenium.Image_DragDrop_Position_Section"/>
+       <class name="com.freshproposals.selenium.Image_DragDrop_Position_Template"/>
+       <class name="com.freshproposals.selenium.Signature_DragDrop_Position_Proposal"/>
+       <class name="com.freshproposals.selenium.Signature_DragDrop_Position_Section"/>
+       <class name="com.freshproposals.selenium.Signature_DragDrop_Position_Template"/>
+       <class name="com.freshproposals.selenium.Signature_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Signature_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Signature_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.Rectangle_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Rectangle_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Rectangle_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.TextBox_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.TextBox_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.TextBox_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.Ellipse_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Ellipse_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Ellipse_Duplicate_Template"/>
+       <class name="com.freshproposals.selenium.Image_Duplicate_Proposal"/>
+       <class name="com.freshproposals.selenium.Image_Duplicate_Section"/>
+       <class name="com.freshproposals.selenium.Image_Duplicate_Template"/>
+          
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+

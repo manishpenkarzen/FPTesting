@@ -1,0 +1,2424 @@
+<html>
+<head>
+<title>TestNG:  All</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>246/21/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 14 17:44:55 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>1890 seconds (1890492 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Proposal.DragDrop_Get_Position()'><b>DragDrop_Get_Position</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [727] but found [729]
+	at com.freshproposals.selenium.Image_DragDrop_Position_Proposal.DragDrop_Get_Position(Image_DragDrop_Position_Proposal.java:103)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181583265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181583265'><pre>java.lang.AssertionError: expected [727] but found [729]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.freshproposals.selenium.Image_DragDrop_Position_Proposal.DragDrop_Get_Position(Image_DragDrop_Position_Proposal.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>8</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Proposal@3fd7a715</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Proposal.Get_Position()'><b>Get_Position</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [327] but found [329]
+	at com.freshproposals.selenium.Image_DragDrop_Position_Proposal.Get_Position(Image_DragDrop_Position_Proposal.java:67)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1315720277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1315720277'><pre>java.lang.AssertionError: expected [327] but found [329]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at com.freshproposals.selenium.Image_DragDrop_Position_Proposal.Get_Position(Image_DragDrop_Position_Proposal.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Proposal@3fd7a715</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_quote()'><b>click_reflect_quote</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Quote&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: db6595d8ebf7a3349b7678ee808dcc14
+*** Element info: {Using=link text, value=Quote}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace798418079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798418079'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Quote&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: db6595d8ebf7a3349b7678ee808dcc14
+*** Element info: {Using=link text, value=Quote}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_quote(TextBox_Top_Properties2.java:152)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>54</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteImage()'><b>deleteImage</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@src=&apos;../../assets/delete-icon.svg&apos;]&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b58795eb1be6a3e4c266d3f3055075c
+*** Element info: {Using=xpath, value=//img[@src=&apos;../../assets/delete-icon.svg&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteImage(Click_Drag_Drop_all_Components.java:202)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1338136300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338136300'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@src=&apos;../../assets/delete-icon.svg&apos;]&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60220}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b58795eb1be6a3e4c266d3f3055075c
+*** Element info: {Using=xpath, value=//img[@src=&apos;../../assets/delete-icon.svg&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteImage(Click_Drag_Drop_all_Components.java:202)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>54</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.greyscale()'><b>greyscale</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: grayscale (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.greyscale(Existing_Single_Image_Proposal.java:329)
+	at java.util.ArrayList.forEach(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;grayscale&apos;]&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 57adf37ef4b3638094b796856ce7ab2b
+*** Element info: {Using=name, value=grayscale}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157004450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157004450'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: grayscale (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.greyscale(Existing_Single_Image_Proposal.java:329)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;grayscale&apos;]&quot;}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 57adf37ef4b3638094b796856ce7ab2b
+*** Element info: {Using=name, value=grayscale}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+</pre></div></td>
+<td>50</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.insert_link()'><b>insert_link</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;fr-command fr-submit&quot; role=&quot;button&quot; data-cmd=&quot;link...&quot; href=&quot;#&quot; tabindex=&quot;4&quot; type=&quot;button&quot;&gt;Insert&lt;/button&gt; is not clickable at point (1169, 296). Other element would receive the click: &lt;div _ngcontent-mok-c134=&quot;&quot; class=&quot;form-group&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: db6595d8ebf7a3349b7678ee808dcc14
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.freshproposals.selenium.TextBox_Top_Properties2.insert_link(TextBox_Top_Properties2.java:784)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1844677448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1844677448'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;fr-command fr-submit&quot; role=&quot;button&quot; data-cmd=&quot;link...&quot; href=&quot;#&quot; tabindex=&quot;4&quot; type=&quot;button&quot;&gt;Insert&lt;/button&gt; is not clickable at point (1169, 296). Other element would receive the click: &lt;div _ngcontent-mok-c134=&quot;&quot; class=&quot;form-group&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61133}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: db6595d8ebf7a3349b7678ee808dcc14
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.freshproposals.selenium.TextBox_Top_Properties2.insert_link(TextBox_Top_Properties2.java:784)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.length()'><b>length</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div _ngcontent-lvt-c141=&quot;&quot; class=&quot;resizers&quot;&gt;...&lt;/div&gt; is not clickable at point (406, 597). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; aria-modal=&quot;true&quot; class=&quot;d-block fade modal modal-holder show&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2b33e2e134dc7d0e4d108f15a6c0f52b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.freshproposals.selenium.Line_Properties_Proposal.length(Line_Properties_Proposal.java:72)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142052682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2142052682'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div _ngcontent-lvt-c141=&quot;&quot; class=&quot;resizers&quot;&gt;...&lt;/div&gt; is not clickable at point (406, 597). Other element would receive the click: &lt;ngb-modal-window role=&quot;dialog&quot; tabindex=&quot;-1&quot; aria-modal=&quot;true&quot; class=&quot;d-block fade modal modal-holder show&quot;&gt;...&lt;/ngb-modal-window&gt;
+  (Session info: chrome=86.0.4240.198)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-0FSTDRC&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59933}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2b33e2e134dc7d0e4d108f15a6c0f52b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.freshproposals.selenium.Line_Properties_Proposal.length(Line_Properties_Proposal.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.padding_Left()'><b>padding_Left</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingLeft]]
+	at com.freshproposals.selenium.Existing_Template.padding_Left(Existing_Template.java:280)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1185618138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1185618138'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingLeft]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Template.padding_Left(Existing_Template.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_Left()'><b>padding_Left</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingLeft]]
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_Left(Existing_Single_Image_Proposal.java:312)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace130564501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace130564501'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingLeft]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_Left(Existing_Single_Image_Proposal.java:312)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.padding_bottom()'><b>padding_bottom</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingBottom]]
+	at com.freshproposals.selenium.Existing_Template.padding_bottom(Existing_Template.java:270)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690481990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690481990'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingBottom]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Template.padding_bottom(Existing_Template.java:270)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_bottom()'><b>padding_bottom</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingBottom]]
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_bottom(Existing_Single_Image_Proposal.java:302)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1020397237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1020397237'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingBottom]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_bottom(Existing_Single_Image_Proposal.java:302)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.padding_right()'><b>padding_right</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingRight]]
+	at com.freshproposals.selenium.Existing_Template.padding_right(Existing_Template.java:289)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace318794136", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace318794136'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingRight]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Template.padding_right(Existing_Template.java:289)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_right()'><b>padding_right</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingRight]]
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_right(Existing_Single_Image_Proposal.java:321)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1125509551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1125509551'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingRight]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_right(Existing_Single_Image_Proposal.java:321)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.padding_top()'><b>padding_top</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingTop]]
+	at com.freshproposals.selenium.Existing_Template.padding_top(Existing_Template.java:261)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1187410086", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1187410086'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (b643428bec5b11ead8efb01ad5d18b20)] -&gt; name: paddingTop]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Template.padding_top(Existing_Template.java:261)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_top()'><b>padding_top</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingTop]]
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_top(Existing_Single_Image_Proposal.java:293)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1286643712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1286643712'><pre>java.lang.AssertionError: expected [30] but found [[[ChromeDriver: chrome on WINDOWS (57adf37ef4b3638094b796856ce7ab2b)] -&gt; name: paddingTop]]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:563)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_top(Existing_Single_Image_Proposal.java:293)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.reflect_length()'><b>reflect_length</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [500px] but found [100px]
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace90628418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace90628418'><pre>java.lang.AssertionError: expected [500px] but found [100px]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.freshproposals.selenium.Line_Properties_Proposal.reflect_length(Line_Properties_Proposal.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.reflect_rotate()'><b>reflect_rotate</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [5deg] but found []
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2063275841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2063275841'><pre>java.lang.AssertionError: expected [5deg] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.freshproposals.selenium.Existing_Single_Image_Proposal.reflect_rotate(Existing_Single_Image_Proposal.java:368)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.reflect_rotate()'><b>reflect_rotate</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [5deg] but found []
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850055104", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850055104'><pre>java.lang.AssertionError: expected [5deg] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.freshproposals.selenium.Rectangle_Properties_Proposal.reflect_rotate(Rectangle_Properties_Proposal.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.reflect_rotate()'><b>reflect_rotate</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [5deg] but found []
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace253988431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace253988431'><pre>java.lang.AssertionError: expected [5deg] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.freshproposals.selenium.Line_Properties_Proposal.reflect_rotate(Line_Properties_Proposal.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.reflect_shadow()'><b>reflect_shadow</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [rgb(29, 201, 183) 100px 100px 100px 100px] but found [none]
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1101231294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1101231294'><pre>java.lang.AssertionError: expected [rgb(29, 201, 183) 100px 100px 100px 100px] but found [none]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.freshproposals.selenium.Rectangle_Properties_Proposal.reflect_shadow(Rectangle_Properties_Proposal.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.reflect_shadow()'><b>reflect_shadow</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td><div><pre>java.lang.AssertionError: expected [rgb(29, 201, 183) 100px 100px 100px 100px] but found [none]
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1110095671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1110095671'><pre>java.lang.AssertionError: expected [rgb(29, 201, 183) 100px 100px 100px 100px] but found [none]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.freshproposals.selenium.Line_Properties_Proposal.reflect_shadow(Line_Properties_Proposal.java:188)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.TestRunner$$Lambda$46/1166151249.accept(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Proposal.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Proposal</td>
+<td></td>
+<td>6</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Proposal@3fd7a715</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Template.DragDrop()'><b>DragDrop</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Template</td>
+<td></td>
+<td>8</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Template@711f39f9</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Template.DragDrop_Get_Position()'><b>DragDrop_Get_Position</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Template</td>
+<td></td>
+<td>8</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Template@711f39f9</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Template.Get_Position()'><b>Get_Position</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Template</td>
+<td></td>
+<td>8</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Template@711f39f9</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Proposal.Reset()'><b>Reset</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Proposal</td>
+<td></td>
+<td>19</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Proposal@3fd7a715</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Template.Reset()'><b>Reset</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Template</td>
+<td></td>
+<td>11</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Template@711f39f9</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_align()'><b>Save_align</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_final()'><b>Save_final</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_line_height()'><b>Save_line_height</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_link()'><b>Save_link</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ol1()'><b>Save_ol1</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ol2()'><b>Save_ol2</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ol3()'><b>Save_ol3</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ol4()'><b>Save_ol4</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ol5()'><b>Save_ol5</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ol6()'><b>Save_ol6</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_paragraph_style()'><b>Save_paragraph_style</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ul1()'><b>Save_ul1</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ul2()'><b>Save_ul2</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ul3()'><b>Save_ul3</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>13</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.Save_ul4()'><b>Save_ul4</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Existing_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.FeeTable<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.ContentTable.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.ContentTable<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.ContentTable@7d0587f1</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Proposal.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Proposal<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Proposal@3fd7a715</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Template.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Template<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Template@711f39f9</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.SetUnmPwd()'><b>SetUnmPwd</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2<br>Parameters: shahnawaz@zenincloud.com, Shahnawaz@123</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.addContent()'><b>addContent</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.addData()'><b>addData</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>34</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.align_center()'><b>align_center</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.align_justify()'><b>align_justify</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.align_left()'><b>align_left</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>8</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.align_right()'><b>align_right</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.assert_text_1()'><b>assert_text_1</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.assert_text_2()'><b>assert_text_2</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.assert_width_1()'><b>assert_width_1</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.assert_width_2()'><b>assert_width_2</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.background_color()'><b>background_color</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.background_color()'><b>background_color</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.background_color()'><b>background_color</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.blur_radius()'><b>blur_radius</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.blur_radius()'><b>blur_radius</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.blur_radius()'><b>blur_radius</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.blur_radius()'><b>blur_radius</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.ContentTable.body()'><b>body</b><br>Test class: com.freshproposals.selenium.ContentTable</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.ContentTable@7d0587f1</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.border_Width()'><b>border_Width</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.border_Width()'><b>border_Width</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.border_Width()'><b>border_Width</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.border_Width()'><b>border_Width</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.border_click()'><b>border_click</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.border_click()'><b>border_click</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.border_click()'><b>border_click</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.border_click()'><b>border_click</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.circular()'><b>circular</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.circular()'><b>circular</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.circular()'><b>circular</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_1point15()'><b>click_reflect_1point15</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_1point5()'><b>click_reflect_1point5</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_body()'><b>click_reflect_body</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_default()'><b>click_reflect_default</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>7</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_double()'><b>click_reflect_double</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_h1()'><b>click_reflect_h1</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>7</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_h2()'><b>click_reflect_h2</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_h3()'><b>click_reflect_h3</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_h4()'><b>click_reflect_h4</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.click_reflect_single()'><b>click_reflect_single</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.corner_apply()'><b>corner_apply</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>3</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.corner_click()'><b>corner_click</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.ContentTable.ct()'><b>ct</b><br>Test class: com.freshproposals.selenium.ContentTable</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.ContentTable@7d0587f1</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteCircle()'><b>deleteCircle</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteContentTable()'><b>deleteContentTable</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteEllipse()'><b>deleteEllipse</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteFeesTable()'><b>deleteFeesTable</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteLine()'><b>deleteLine</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteRectangle()'><b>deleteRectangle</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteSignature()'><b>deleteSignature</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteSquare()'><b>deleteSquare</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteTextBox()'><b>deleteTextBox</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.deleteTriangle()'><b>deleteTriangle</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all()'><b>delete_all</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_10()'><b>delete_all_10</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_11()'><b>delete_all_11</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_12()'><b>delete_all_12</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_13()'><b>delete_all_13</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_14()'><b>delete_all_14</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_2()'><b>delete_all_2</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_3()'><b>delete_all_3</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_4()'><b>delete_all_4</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_5()'><b>delete_all_5</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_6()'><b>delete_all_6</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_7()'><b>delete_all_7</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_8()'><b>delete_all_8</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.delete_all_9()'><b>delete_all_9</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropCircle()'><b>dragDropCircle</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>4</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropEllipse()'><b>dragDropEllipse</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>4</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropFeesTable()'><b>dragDropFeesTable</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropImage()'><b>dragDropImage</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropLine()'><b>dragDropLine</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>4</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropRectangle()'><b>dragDropRectangle</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>4</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropSignature()'><b>dragDropSignature</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropSquare()'><b>dragDropSquare</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>4</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropTextBox()'><b>dragDropTextBox</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropTriangle()'><b>dragDropTriangle</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>4</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.dragDropcontentTable()'><b>dragDropcontentTable</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.duplicate()'><b>duplicate</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.feesLibrary()'><b>feesLibrary</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>6</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.flip()'><b>flip</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.ContentTable.footer()'><b>footer</b><br>Test class: com.freshproposals.selenium.ContentTable</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.ContentTable@7d0587f1</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.gradient()'><b>gradient</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.gradient()'><b>gradient</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.gradient()'><b>gradient</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.ContentTable.header()'><b>header</b><br>Test class: com.freshproposals.selenium.ContentTable</td>
+<td></td>
+<td>1</td>
+<td>com.freshproposals.selenium.ContentTable@7d0587f1</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.height()'><b>height</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.height()'><b>height</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.horizontal_length()'><b>horizontal_length</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.horizontal_length()'><b>horizontal_length</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.horizontal_length()'><b>horizontal_length</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.horizontal_length()'><b>horizontal_length</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.opacity()'><b>opacity</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.opacity()'><b>opacity</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.opacity()'><b>opacity</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.openExistData()'><b>openExistData</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>40</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.openExistData()'><b>openExistData</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>40</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Click_Drag_Drop_all_Components.openExistData()'><b>openExistData</b><br>Test class: com.freshproposals.selenium.Click_Drag_Drop_all_Components</td>
+<td></td>
+<td>33</td>
+<td>com.freshproposals.selenium.Click_Drag_Drop_all_Components@5d76b067</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Proposal.openExistTemplate()'><b>openExistTemplate</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Proposal</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Proposal@3fd7a715</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_DragDrop_Position_Template.openExistTemplate()'><b>openExistTemplate</b><br>Test class: com.freshproposals.selenium.Image_DragDrop_Position_Template</td>
+<td></td>
+<td>15</td>
+<td>com.freshproposals.selenium.Image_DragDrop_Position_Template@711f39f9</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.openExistingData()'><b>openExistingData</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>40</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.ContentTable.openExistingData()'><b>openExistingData</b><br>Test class: com.freshproposals.selenium.ContentTable</td>
+<td></td>
+<td>41</td>
+<td>com.freshproposals.selenium.ContentTable@7d0587f1</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.openExistingData()'><b>openExistingData</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal</td>
+<td></td>
+<td>41</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.openExistingData()'><b>openExistingData</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal</td>
+<td></td>
+<td>41</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.openExistingData()'><b>openExistingData</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal</td>
+<td></td>
+<td>40</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.openExistingData()'><b>openExistingData</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal</td>
+<td></td>
+<td>40</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.openWtriteTemplate()'><b>openWtriteTemplate</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>55</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.open_Template()'><b>open_Template</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template</td>
+<td></td>
+<td>34</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.open_Template()'><b>open_Template</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template</td>
+<td></td>
+<td>34</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.open_Template()'><b>open_Template</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template</td>
+<td></td>
+<td>34</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.open_Template()'><b>open_Template</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal</td>
+<td></td>
+<td>40</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.open_Template()'><b>open_Template</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>36</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.open_Template()'><b>open_Template</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template</td>
+<td></td>
+<td>34</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.orderList_default()'><b>orderList_default</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>10</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.orderlist_lower_alpha()'><b>orderlist_lower_alpha</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>10</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.orderlist_lower_greek()'><b>orderlist_lower_greek</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>10</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.orderlist_lower_roman()'><b>orderlist_lower_roman</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.orderlist_upper_alpha()'><b>orderlist_upper_alpha</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.orderlist_upper_roman()'><b>orderlist_upper_roman</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>8</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.padding_click()'><b>padding_click</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.padding_click()'><b>padding_click</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.reflect_height()'><b>reflect_height</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.reflect_shadow()'><b>reflect_shadow</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.reflect_shadow()'><b>reflect_shadow</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.reflect_width()'><b>reflect_width</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.reflect_width()'><b>reflect_width</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.reflect_width()'><b>reflect_width</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>5</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.rotate()'><b>rotate</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.rotate()'><b>rotate</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.rotate()'><b>rotate</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.rotate()'><b>rotate</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>16</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.rowStyle()'><b>rowStyle</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.saveAndPreview()'><b>saveAndPreview</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>12</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.saveAndPreview()'><b>saveAndPreview</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>12</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.saveAndPreview()'><b>saveAndPreview</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>12</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.saveAndPreview()'><b>saveAndPreview</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>12</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.shadow_click()'><b>shadow_click</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.shadow_click()'><b>shadow_click</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.shadow_click()'><b>shadow_click</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.shadow_click()'><b>shadow_click</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.spread_radius()'><b>spread_radius</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.spread_radius()'><b>spread_radius</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.spread_radius()'><b>spread_radius</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.spread_radius()'><b>spread_radius</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.tableStyle_body()'><b>tableStyle_body</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.tableStyle_footer()'><b>tableStyle_footer</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.FeeTable.tableStyle_header()'><b>tableStyle_header</b><br>Test class: com.freshproposals.selenium.FeeTable</td>
+<td></td>
+<td>2</td>
+<td>com.freshproposals.selenium.FeeTable@67205a84</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.unorderlist_circle()'><b>unorderlist_circle</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.unorderlist_default()'><b>unorderlist_default</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.unorderlist_disc()'><b>unorderlist_disc</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.unorderlist_square()'><b>unorderlist_square</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>9</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Top_Properties2.url()'><b>url</b><br>Test class: com.freshproposals.selenium.TextBox_Top_Properties2</td>
+<td></td>
+<td>14</td>
+<td>com.freshproposals.selenium.TextBox_Top_Properties2@71bbf57e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.vertical_length()'><b>vertical_length</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.vertical_length()'><b>vertical_length</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.vertical_length()'><b>vertical_length</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Line_Properties_Proposal.vertical_length()'><b>vertical_length</b><br>Test class: com.freshproposals.selenium.Line_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Line_Properties_Proposal@5e853265</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Template.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Existing_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Template@9660f4e</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Existing_Single_Image_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Existing_Single_Image_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Existing_Single_Image_Proposal@5a8806ef</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Properties_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Rectangle_Properties_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Properties_Proposal@6c49835d</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Proposal@2a17b7b6</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Ellipse_Duplicate_Template.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Ellipse_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Ellipse_Duplicate_Template@4f063c0a</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Proposal@1e6d1014</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Image_Duplicate_Template.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Image_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Image_Duplicate_Template@76707e36</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Proposal@614ddd49</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Rectangle_Duplicate_Template.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Rectangle_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Rectangle_Duplicate_Template@1f554b06</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Proposal@694e1548</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.TextBox_Duplicate_Template.width()'><b>width</b><br>Test class: com.freshproposals.selenium.TextBox_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.TextBox_Duplicate_Template@1c3a4799</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Proposal.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Proposal</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Proposal@131276c2</td></tr>
+<tr>
+<td title='com.freshproposals.selenium.Signature_Duplicate_Template.width()'><b>width</b><br>Test class: com.freshproposals.selenium.Signature_Duplicate_Template</td>
+<td></td>
+<td>0</td>
+<td>com.freshproposals.selenium.Signature_Duplicate_Template@26aa12dd</td></tr>
+</table><p>
+</body>
+</html>
